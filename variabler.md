@@ -19,6 +19,7 @@ f.eks.
 ```javascript
 let string1 = 'tekst1';
 let string2 = "tekst2";
+let string3 = `tekst3`;
 ```
 
 ## Number
@@ -26,7 +27,7 @@ Number er tal værdier, de skrives således...
 
 ```javascript
 let tal = 10;
-let tal2 = 45;
+let tal2 = 45.5;
 ```
 
 ## Booleans
@@ -45,6 +46,7 @@ let navne = ['Anna', 'Pia', 'Nanna', 'Joakim', 'Konrad'];
 
 Du kan også lave arrays i et Array, som følgende:
 
+//ret alder
 ```javascript
 let navneOGalder = [['Anna', '20'] , ['Pia', '17'], ['Nanna', '40'], ['Joakim' '32'], ['Konrad', '23']];
 ```

@@ -1,21 +1,24 @@
 
 
 
-//let frugter = ['pære', 'æble', 'banan'];
-//console.log(frugter);
+let frugter = ['pære', 'æble', 'banan'];
+console.log(frugter);
 
-//let frugter = ['pære', 'æble', 'banan'];
+let frugter = ['pære', 'æble', 'banan'];
+console.log(frugter[1]);
+
+frugter [0] = 'fersken';
 
 
-//let array = 'fersken';
-//frugter [3] = array;
+frugter [frugter.length] = 'appelsiner';
+console.log(frugter);
 
-//let array2 = 'appelsin';
-//frugter [frugter.length] = array2;
-//console.log(frugter);
+console.log(frugter.length);
 
-//let personer = [['Annie', '19'], ['David', '25'], ['Theo', '24']];
-//console.log(personer);
+let personer = [['Annie', 19], ['David', 25], ['Theo', 24]];
+console.log(personer);
+
+
 
 
 

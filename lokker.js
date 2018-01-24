@@ -1,9 +1,10 @@
 
-//let i=0;
 
-//for (i = 0; i < 25; i++) { 
- //   console.log(i);
-//}
+
+// for (let i = 0; i < 25; i++) { 
+//    console.log(i);
+// }
+// let i=0;
 
 // while (i < 25) {
 //    console.log(i);
@@ -15,8 +16,7 @@
 //    i++;
 //  } while(i<25);
 
-//  var tekst = " "
-//  var i = 0;
+//  let i = 0;
 
 //  do {
 //    console.log("Tallet er " + i);
@@ -25,9 +25,9 @@
 // while (i < 10);
 
 
-//for (x = 2017; x >= 1917; x--) {
- //   console.log(x);
-//}
+// for (let x = 2017; x >= 1917; x--) {
+//    console.log(x);
+// }
 
 
 
@@ -39,7 +39,7 @@
 //     i++;
 // }
 
-//ARRAYS............
+// ARRAYS............
 
 // let navn = ["Emil", "Thorkil", "Signe", "Amanda"];
 
@@ -54,15 +54,19 @@
 //      console.log(navne + " er placeret på " + index + " plads");
 // });
 
-// let tal = [1, 2, 876, 346, 5, 98765, 8, 45, 10];
+let tal = [1, 2, 876, 346, 5, 98765, 8, 45, 10];
 
-// tal.forEach(function(ta, index, arr) {
-//     if(ta > tal[index+1]){
-//     console.log(ta + " er større end " + tal[index+1] );
-//     }else{
-//         console.log(ta + " er mindre end " + tal[index+1]);
-//     }
-//  });
+tal.forEach(function (ta, index, arr) {
+    if (index < tal.length-1) {
+        if (ta > tal[index + 1]) {
+            console.log(ta + " er større end " + tal[index + 1]);
+        } else {
+            console.log(ta + " er mindre end " + tal[index + 1]);
+        }
+    }else{
+        console.log(ta + ' er den er sidste i rækken');
+    }
+});
 
 
 

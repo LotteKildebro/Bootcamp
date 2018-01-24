@@ -22,7 +22,7 @@ Dette er smart hvis man har brug for at kunne ændre disse værdier senere.
 
 ```javascript
 function isNaNogContent(a, b){
-    if((a)=="" || (b)=="" || isNaN(a) || isNaN(b)){
+    if(a==undefined || b==undefined || isNaN(a) || isNaN(b)){
         return false;
     }else{
         return 'tal ' + a + ' gange med tal ' + b + ' er lig med ' + a * b;
@@ -39,12 +39,19 @@ console.log(find);
 return statement stopper udførelsen af en funktion og retunere en værdi fra den funktion.
 
 ## Eksempel på return syntax
+
 ```javascript
 return value;
-````
+```
+## Eksempel på funktion
 
-var x = myFunction(4, 3); 
+Her udregner vi værdien af to tal og returnere så svaret.
+
+```javascript
+let x = myFunction(4, 3); 
 
 function myFunction(a, b) {
     return a * b;   
 }    
+```
+

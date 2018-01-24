@@ -1,12 +1,18 @@
 
 ## Operatorer
 
-1. = : tildelings operator, "lig med" kan f.eks. bruges til at sige "Let navn = 'hej';" .. 
+1. = : tildelings operator, "lig med" 
+```javascript 
+let = 'hej';
+```
 1. == : sammenlignings operator, f.eks. siger vi "'hej' == navn" - er det 'hej' der ligger i navn ..
+```javascript 
+drik == 'mælk'
+```
 1. === : sammenlignings operator, værdi+datatype..
 1. ! : not, den kan vende et udtryk om.
 1. != : denne operator spørg "er den ikke lig med..."
-1. !== : denne operator spørg "er den ikke lig med..." +datatype.
+1. !== : denne operator spørg "er den ikke lig med..." værdierne skal være forskellige man datatypen den samme.
 1. <: større end
 1. >: mindre end
 1. <=: større end og er lig med
