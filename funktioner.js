@@ -1,5 +1,5 @@
 
-//OPGAVE 1 
+//OPGAVE 1
 
 //denne virker ikke...why?--------------//
 // let x = 10;
@@ -25,14 +25,55 @@
 
 //-----slut på den der virker....//
 
-let x = 22;
-let y = 380;
+// let x = 22;
+// let y = 380;
 
-function gangeMedxOGy(x, y) {
-    if (!isNaN(x) || !isNaN(y)) {
-       return 0;
-    } else {
-       return x * y;
+// function gangeMedxOGy(x, y) {
+//     if (!isNaN(x)==false || !isNaN(y)==false) {
+//        return 'nopes';
+//     } else {
+//        return x * y;
+//     }
+//  }
+
+
+// var findtal = gangeMedxOGy(4,8);
+// console.log(findtal);
+
+
+// function regndetUD(a, b){
+//     if(isNaN(a)==false && isNaN(b)==false){
+//         return 'tal ' + a + ' gange med tal ' + b + ' er lig med ' + a * b;
+//     }else{
+//         console.log('det er ikke et tal');
+//     }
+// }
+
+// let find = regndetUD(22, 10);
+
+// console.log(find);
+
+
+function isNaNogContent(a, b){
+    if((a)=="" || (b)=="" || !isNaN(a) || !isNaN(b)){
+        return false;
+    }else{
+        return 'tal ' + a + ' gange med tal ' + b + ' er lig med ' + a * b;
     }
- }
+}
+
+let find = isNaNogContent(22,10);
+
+console.log(find);
+
+
+// function udskrivfarve (farve) {
+//     console.log(farve);
+// }
+
+// let farver =  ['rød', 'grøn', 'blå'];
+// farver.forEach(udskrivfarve);
+
+
+
 
