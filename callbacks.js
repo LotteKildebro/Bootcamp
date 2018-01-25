@@ -27,21 +27,21 @@
 
 //----Forsøg 1------
 
-// let kittens = ['cleo', 'chaps', 'snowball', 'blues mis'];
+let kittens = ['cleo', 'chaps', 'snowball', 'blues mis'];
 
-// function Html(tekst) {
-//     console.log('<p>' + tekst + '</p>');
-// }
+function Html(tekst) {
+    console.log('<p>' + tekst + '</p>');
+}
 
-// function sighej(tekst, next) {
-//     if (typeof tekst == 'string') {
-//         next(tekst);
-//     } else if (Array.isArray(tekst) == true) {
-//         for (i = 0; i < tekst.length; i++)
-//             next(tekst[i]);
-//     }
-// }
-// sighej(kittens, Html);
+function sighej(tekst, next) {
+    if (typeof tekst == 'string') {
+        next(tekst);
+    } else if (Array.isArray(tekst) == true) {
+        for (i = 0; i < tekst.length; i++)
+            next(tekst[i]);
+    }
+}
+sighej('hej', Html);
 // Vi sender html med
 
 //-----Forsøg 2--------
@@ -53,6 +53,8 @@
 //     next(tekst);
 // }
 // sigNoget('goddag', ChangeHtml);
+
+
 
 
 
