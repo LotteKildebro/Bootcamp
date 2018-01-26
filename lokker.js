@@ -54,7 +54,7 @@
 //      console.log(navne + " er placeret på " + index + " plads");
 // });
 
-let tal = [1, 2, 876, 346, 5, 98765, 8, 45, 10];
+// let tal = [1, 2, 876, 346, 5, 98765, 8, 45, 10];
 
 tal.forEach(function (ta, index, arr) {
     if (index < tal.length-1) {

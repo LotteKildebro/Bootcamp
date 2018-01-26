@@ -1,0 +1,37 @@
+
+<!-- Udråbstegn og tab for start -->
+<!-- json er en samlet data med navngivet pladser -->
+<!-- let h1 = document.createElement('h1'); ==bygger noget html i js -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content"></div>
+  <script>
+//data fra nettet
+fetch('https://swapi.co/api/people/')
+   .then((response) => {
+      return response.json();
+   })
+   .then((json) => {
+       //vi tilføjer data fra nettet(fra fetch) i denne funktion.
+      let content = document.getElementById('content');
+      let h1 = document.createElement('h1');
+      //h1'eren indhold = det første navn i array (json har navngivet objekter derfor virker navn)
+      h1.textContent = json.results[0].name;
+      content.appendChild(h1);
+      console.log(json);
+      //fejlmessage 
+   }).catch(function(error){
+     console.log(error);
+   })
+    
+    </script>  
+
+</body>
+</html>

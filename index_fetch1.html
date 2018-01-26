@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fetch opgave...</title>
+</head>
+
+<body>
+        <div id="content"></div>
+
+        <script>
+            //data fra nettet
+            //vi tilføjer data fra nettet(fra fetch) i denne funktion.
+            fetch('https://swapi.co/api/planets/')
+                .then((response) => {
+                    return response.json();
+                })
+                .then((json) => {
+                    let content = document.getElementById('content');
+                    json.results.forEach(planets => {
+
+                    let h1 = document.createElement('h1');
+                    //h1'eren indhold = det første navn i array (json har navngivet objekter derfor virker navn)
+                    h1.textContent = planets.name;
+                    content.appendChild(h1);
+
+
+                    let p = document.createElement('p');
+                    //h1'eren indhold = det første navn i array (json har navngivet objekter derfor virker navn)
+                    p.textContent = planets.rotation_period;
+                    content.appendChild(p);
+
+                    let p2 = document.createElement('p');
+                    //h1'eren indhold = det første navn i array (json har navngivet objekter derfor virker navn)
+                    p2.textContent = planets.orbital_period;
+                    content.appendChild(p2);
+
+                    let p3 = document.createElement('p');
+                    //h1'eren indhold = det første navn i array (json har navngivet objekter derfor virker navn)
+                    p3.textContent = planets.diameter;
+                    content.appendChild(p3);
+                })
+                       
+                })
+                //fejlmessage 
+                .catch(function (error) {
+                    console.log(error);
+                })
+
+        </script>
+</body>
+</html>
