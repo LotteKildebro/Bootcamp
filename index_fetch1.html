@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fetch opgave...</title>
+    
 
     <style>
             html {
@@ -37,6 +38,7 @@
                text-align: center;
                font-size: 5em;
            }
+ 
             
             </style>
 
@@ -117,25 +119,25 @@
         //     }
         // );
 
-        //     for (let i = 0; i < 5; i++) {
+            // for (let i = 0; i < 5; i++) {
   
-        //     fetch('https://swapi.co/api/planets/')
-        //         .then((response) => {
-        //             console.log(response)
-        //             if (response.status == 200){
-        //                   return response.json();
-        //             }else {
-        //                 throw new Error ('virker ikke');
-        //             }
-        //         })
-        //         .then((json) => {
-        //         json.results.forEach(udskriv);
-        //         })
+            // fetch('https://swapi.co/api/planets/')
+            //     .then((response) => {
+            //         console.log(response)
+            //         if (response.status == 200){
+            //               return response.json();
+            //         }else {
+            //             throw new Error ('virker ikke');
+            //         }
+            //     })
+            //     .then((json) => {
+            //     json.results.forEach(udskriv);
+            //     })
                        
-        //         .catch(function (error) {
-        //             console.log(error);
-        //         });
-        //     }
+            //     .catch(function (error) {
+            //         console.log(error);
+            //     });
+            // }
 
         function udskriv(person) {
            let content = document.getElementById('content');
@@ -167,6 +169,8 @@
            .catch(function (error) {
                console.log(error);
            });
+
+
         </script>
  </div><!--  end wrapper  -->
 </body>
